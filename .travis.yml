@@ -19,14 +19,10 @@ matrix:
     - compiler: gcc
       os: linux
     - os: linux
-      # FIXME: remove dist, when Xenial images become default in Travis CI
-      dist: xenial
       env:
         - OS_TYPE=centos_docker
         - OS_VERSION=7
     - os: linux
-      # FIXME: remove dist, when Xenial images become default in Travis CI
-      dist: xenial
       env:
         - OS_TYPE=ubuntu_docker
         - OS_VERSION=bionic
