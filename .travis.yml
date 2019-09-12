@@ -11,28 +11,6 @@ services:
 
 matrix:
   include:
-    - compiler: clang
-      os: linux
-      env:
-        - TEST_NON_GIT_REPO=1
-        - LDIST=DO_NOT_DEPLOY
-    - compiler: gcc
-      os: linux
-    - os: linux
-      env:
-        - OS_TYPE=centos_docker
-        - OS_VERSION=7
-    - os: linux
-      env:
-        - OS_TYPE=centos_docker
-        - OS_VERSION=8
-    - os: linux
-      dist: bionic
-    - os: linux
-      dist: focal
-    - compiler: "gcc"
-      os: osx
-      osx_image: xcode10.1
     - compiler: "gcc"
       os: osx
       osx_image: xcode11
