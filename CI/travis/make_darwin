@@ -21,7 +21,7 @@ done
 
 export PKG_CONFIG_PATH
 
-export CFLAGS="-Wno-deprecated"
+export CFLAGS="-Wno-deprecated -Wno-deprecated-declarations"
 
 GCC_VER="$(get_max_gcc_version)"
 if [ -n "$GCC_VER" ] ; then
