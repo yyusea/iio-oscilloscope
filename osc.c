@@ -1038,7 +1038,7 @@ static void load_plugins(GtkWidget *notebook, const char *ini_fn)
 	struct osc_plugin *plugin;
 	struct dirent *ent;
 	char *plugin_dir = "plugins";
-	char buf[512];
+	char buf[PATH_MAX + 1];
 	DIR *d;
 	struct osc_plugin *generic_dac = NULL;
 	void *generic_lib = NULL;
