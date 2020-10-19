@@ -18,8 +18,6 @@ matrix:
         - LDIST=DO_NOT_DEPLOY
     - compiler: gcc
       os: linux
-      env:
-        - EXTRA_SSH=-oHostKeyAlgorithms=+ssh-dss
     - os: linux
       # FIXME: remove dist, when Xenial images become default in Travis CI
       dist: xenial
@@ -35,8 +33,6 @@ matrix:
     - compiler: "gcc"
       os: osx
       osx_image: xcode10.1
-      env:
-        - EXTRA_SSH=-oHostKeyAlgorithms=+ssh-dss
 
 addons:
   artifacts: true
