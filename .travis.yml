@@ -24,8 +24,12 @@ matrix:
         - OS_VERSION=7
     - os: linux
       env:
-        - OS_TYPE=ubuntu_docker
-        - OS_VERSION=bionic
+        - OS_TYPE=centos_docker
+        - OS_VERSION=8
+    - os: linux
+      dist: bionic
+    - os: linux
+      dist: focal
     - compiler: "gcc"
       os: osx
       osx_image: xcode10.1
