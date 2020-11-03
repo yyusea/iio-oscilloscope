@@ -20,7 +20,7 @@ install:
   - tar -xf iio-osc-x86_64-build-deps.tar.xz
 
 build_script:
-  - CI/appveyor/build.sh i686
+  #- CI/appveyor/build.sh i686
   - CI/appveyor/build.sh x86_64
 
 after_build:

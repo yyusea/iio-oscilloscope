@@ -15,6 +15,11 @@ CONFIGURE_OPTS="--prefix=${INSTALL_PREFIX} --host=${HOST} --with-sysroot=${SYSRO
 export PKG_CONFIG_SYSROOT_DIR="${SYSROOT}"
 export PKG_CONFIG_LIBDIR="${SYSROOT}/usr/lib/pkgconfig:${SYSROOT}/usr/share/pkgconfig"
 
+
+#wget "https://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-libusb-1.0.23-1-any.pkg.tar.xz"
+#pacman -U mingw-w64-x86_64-libusb-1.0.23-1-any.pkg.tar.xz
+
+
 # Debian's mingw32 toolchain is not sysroot-aware...
 export CPPFLAGS="-I${SYSROOT}/${INSTALL_PREFIX}/include"
 export LDFLAGS="-L${SYSROOT}/${INSTALL_PREFIX}/lib"
