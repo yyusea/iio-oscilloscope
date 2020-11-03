@@ -18,8 +18,9 @@ export PKG_CONFIG_LIBDIR="${SYSROOT}/usr/lib/pkgconfig:${SYSROOT}/usr/share/pkgc
 
 #wget "https://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-libusb-1.0.23-1-any.pkg.tar.xz"
 #pacman -U mingw-w64-x86_64-libusb-1.0.23-1-any.pkg.tar.xz
+wget "https://mirror.genesisadaptive.com/ubuntu/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0-0-dev_1.0.23-2build1_i386.deb"
 
-
+dpkg -i libusb-1.0-0-dev_1.0.23-2build1_i386.deb
 
 # Debian's mingw32 toolchain is not sysroot-aware...
 export CPPFLAGS="-I${SYSROOT}/${INSTALL_PREFIX}/include"
