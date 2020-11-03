@@ -38,6 +38,7 @@ handle_ubuntu_docker() {
 	prepare_docker_image "ubuntu:${OS_VERSION}"
 }
 
+
 handle_default() {
 	sudo apt-get -qq update
 	sudo apt-get install -y build-essential libxml2-dev libcurl4-openssl-dev \
